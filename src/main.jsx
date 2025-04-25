@@ -1,13 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import routes from './routes';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-const router = createBrowserRouter(routes);
+import Home      from "./pages/Home";
+import Directors from "./pages/Directors";
+import Actors    from "./pages/Actors";
+import Movie     from "./pages/Movie";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+const router = createBrowserRouter([
+  { path: "/",          element: <Home /> },
+  { path: "/directors", element: <Directors /> },
+  { path: "/actors",    element: <Actors /> },
+  { path: "/movie/:id", element: <Movie /> },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
 );

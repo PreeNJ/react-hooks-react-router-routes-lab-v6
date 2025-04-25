@@ -16,7 +16,13 @@
             "title": "Jack Reacher: Never Go Back",
             "time": 118,
             "genres": ["Action", "Adventure", "Crime", "Mystery", "Thriller"]
-        }
+        },
+        {
+            "id": 4,
+            "title": "The Imitation Game",
+            "time": 113,
+            "genres": ["Biography", "Drama", "Thriller"]
+           }  
     ],
 
     "actors": [
@@ -61,6 +67,11 @@
             "id": 3,
             "name": "Edward Zwick",
             "movies": ["Jack Reacher: Never Go Back", "Blood Diamond", "The Siege"]
-        }
+        },
+        {
+            "id": 4,
+            "name": "Lana Wachowski",
+            "movies": ["The Matrix", "Cloud Atlas", "Jupiter Ascending"]
+        } 
     ]
 }

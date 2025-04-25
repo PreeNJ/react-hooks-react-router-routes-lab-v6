@@ -1,15 +1,13 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './NavBar.css';
+import React from "react";
+import { Link } from "react-router-dom";
 
-function NavBar() {
+function MovieCard({ id, title }) {
   return (
-    <nav>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/directors">Directors</NavLink>
-      <NavLink to="/actors">Actors</NavLink>
-    </nav>
+    <div>
+      <h2>{title}</h2>
+      <Link to={`/movie/${id}`}>View Info</Link>
+    </div>
   );
 }
 
-export default NavBar;
+export default MovieCard;

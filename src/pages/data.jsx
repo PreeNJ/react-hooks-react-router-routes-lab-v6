@@ -1,64 +1,33 @@
-// src/data.js
+// Static fixtures used by every component and by the tests
 export const movies = [
-    { id: 1, title: "Doctor Strange", time: 115, genres: ["Action", "Adventure", "Fantasy"] },
-    { id: 2, title: "Trolls", time: 92, genres: ["Animation", "Family"] },
-    { id: 3, title: "Jack Reacher: Never Go Back", time: 118, genres: ["Action", "Thriller"] }
-  ];
-  
-  export const actors = [
-    {
-      id: 1,
-      name: "Benedict Cumberbatch",
-      movies: ["Doctor Strange", "The Imitation Game", "Black Mass"],
-    },
-    {
-      id: 2,
-      name: "Justin Timberlake",
-      movies: ["Trolls", "Friends with Benefits", "The Social Network"],
-    },
-    {
-      id: 3,
-      name: "Anna Kendrick",
-      movies: ["Pitch Perfect", "Into The Woods"],
-    },
-    {
-      id: 4,
-      name: "Tom Cruise",
-      movies: [
-        "Jack Reacher: Never Go Back",
-        "Mission Impossible 4",
-        "War of the Worlds",
-      ],
-    },
-  ];
-  
-  export const directors = [
-    {
-      id: 1,
-      name: "Scott Derrickson",
-      movies: [
-        "Doctor Strange",
-        "Sinister",
-        "The Exorcism of Emily Rose",
-      ],
-    },
-    {
-      id: 2,
-      name: "Mike Mitchell",
-      movies: [
-        "Trolls",
-        "Alvin and the Chipmunks: Chipwrecked",
-        "Sky High",
-      ],
-    },
-    {
-      id: 3,
-      name: "Edward Zwick",
-      movies: [
-        "Jack Reacher: Never Go Back",
-        "Blood Diamond",
-        "The Siege",
-      ],
-    },
-  ];
-  
+  {
+    id: 1,
+    title: "Doctor Strange",
+    time: 115,
+    genres: ["Action", "Adventure", "Fantasy"],
+  },
+  {
+    id: 2,
+    title: "Spider-Man: Homecoming",
+    time: 133,
+    genres: ["Action", "Adventure", "Sci-Fi"],
+  },
+  {
+    id: 3,
+    title: "Thor: Ragnarok",
+    time: 130,
+    genres: ["Action", "Adventure", "Comedy"],
+  },
+];
+
+export const directors = [
+  { name: "Scott Derrickson", movies: ["Doctor Strange"] },
+  { name: "Jon Watts",       movies: ["Spider-Man: Homecoming"] },
+  { name: "Taika Waititi",   movies: ["Thor: Ragnarok"] },
+];
+
+export const actors = [
+  { name: "Benedict Cumberbatch", movies: ["Doctor Strange"] },
+  { name: "Tom Holland",         movies: ["Spider-Man: Homecoming"] },
+  { name: "Chris Hemsworth",     movies: ["Thor: Ragnarok"] },
+];
