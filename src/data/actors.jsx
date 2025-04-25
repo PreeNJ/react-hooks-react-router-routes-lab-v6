@@ -1,7 +1,9 @@
+// src/pages/Actors.jsx
+import React from "react";
 import NavBar from "../components/NavBar";
-import { actors } from "../data";
+import actors from "./actors";
 
-export default function ActorsPage() {
+export default function Actors() {
   return (
     <>
       <NavBar />

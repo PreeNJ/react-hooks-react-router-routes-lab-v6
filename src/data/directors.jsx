@@ -1,14 +1,11 @@
-// src/pages/Directors.jsx
-import React from "react";
 import NavBar from "../components/NavBar";
-import { directors } from "../data";   // ← named import!
+import { directors } from "../data";
 
-export default function Directors() {
+export default function DirectorsPage() {
   return (
     <>
       <NavBar />
       <h1>Directors Page</h1>
-
       {directors.map((dir) => (
         <article key={dir.id}>
           <h2>{dir.name}</h2>
