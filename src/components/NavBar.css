@@ -11,12 +11,7 @@
     color: black;
 }
   
-.active-link {
+a.active {
     background: black;
     color: white;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
 }
